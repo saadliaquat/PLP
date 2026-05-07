@@ -4,10 +4,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import { useState } from "react";
-import { useRouter } from "next/router";
 import Image from "next/image";
 import Logo from "./logo.jpg";
-import { useEffect } from 'react';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,7 +34,7 @@ export default function RootLayout({ children }) {
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
             <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-              <Image src={Logo} width={60} height={70} />
+              <Image src={Logo} width={60} height={70} alt="Purposeful Learning Partnership" />
               <span className="self-center md:text-2xl sm:text-lg text-sm font-semibold whitespace-nowrap text-white">
                 Purposeful Learning Partnership
               </span>

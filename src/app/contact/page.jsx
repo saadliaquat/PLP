@@ -1,7 +1,12 @@
+import { assetUrl } from "@/lib/assetUrl";
+
 const contactUs = () => {
     return (
         <div className="w-full">
-        <section class="bg-center bg-cover bg-no-repeat bg-[url('pics/IMG-20240820-WA0016.jpg')] bg-gray-700 bg-blend-multiply ">
+        <section
+          className="bg-center bg-cover bg-no-repeat bg-gray-700 bg-blend-multiply"
+          style={{ backgroundImage: `url('${assetUrl("/pics/IMG-20240820-WA0016.jpg")}')` }}
+        >
             <div className="flex flex-col items-center justify-around">
             <div class="md:flex flex-row justify-around px-4 max-w-screen-xl text-left lg:pt-56 pt-80 pb-4 text-center">
                 <div class="flex-1 max-w-sm p-6 rounded-lg shadow bg-gray-800 border-gray-700 mb-4 md:mb-0 md:mr-3">
